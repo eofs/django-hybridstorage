@@ -6,10 +6,30 @@ Use multiple file storages to serve and store file.
 This project is based on work by Andrew Ingram. Thanks Andrew!
 
 
+## Usage
+
+Update your `settings.py`:
+
+```python
+DEFAULT_FILE_STORAGE = 'hybridstorage.storages.HybridStorage'
+HYBRID_STORAGE_BACKENDS = (
+    'django.core.files.storage.FileSystemStorage',
+    'my_project.s3utils.MediaRootS3BotoStorage',
+)
+```
+
+In this example `MediaRootS3BotoStorage` is derivered from `django-storages`'s `storages.backends.s3boto.S3BotoStorage` class. See http://stackoverflow.com/a/10825691
+
+Hybridstorage iterates `HYBRID_STORAGE_BACKENDS` until desired IO operation completes successfully.
+
+**Note:** File removal operation is disabled to prevent accidental deletions!
+
+
 License
 =======
 
 Copyright © Tomi Pajunen
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
