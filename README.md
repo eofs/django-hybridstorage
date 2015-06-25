@@ -6,6 +6,10 @@ Use multiple file storages to serve and store file.
 This project is based on work by Andrew Ingram. Thanks Andrew!
 
 
+## Installation
+
+    pip install django-hybridstorage
+
 ## Usage
 
 Update your `settings.py`:
