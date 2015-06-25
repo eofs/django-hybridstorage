@@ -3,7 +3,7 @@ Django Hybrid Storage
 
 Use multiple file storages to serve and store file.
 
-This project is based on work by Andrew Ingram. Thanks Andrew!
+This project is based on work by [Andrew Ingram](http://tech.onefinestay.com/post/53434330047/using-your-production-assets-in-development-a). Thanks Andrew!
 
 
 ## Installation
