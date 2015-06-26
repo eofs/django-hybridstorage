@@ -1,6 +1,8 @@
 Django Hybrid Storage
 ====================
 
+[![pypi-version]][pypi]
+
 Use multiple file storages to serve and store file.
 
 This project is based on work by [Andrew Ingram](http://tech.onefinestay.com/post/53434330047/using-your-production-assets-in-development-a). Thanks Andrew!
@@ -56,3 +58,6 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+[pypi-version]: https://img.shields.io/pypi/v/django-hybridstorage.svg
+[pypi]: https://pypi.python.org/pypi/django-hybridstorage
