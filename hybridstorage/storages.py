@@ -1,12 +1,10 @@
 from django.conf import settings
 from django.core.files.storage import Storage
-from django.utils import importlib
+from django.utils.module_loading import import_string
 
 
 def load_class(class_string):
-    class_module, class_name = class_string.rsplit('.', 1)
-    class_module = importlib.import_module(class_module)
-    return getattr(class_module, class_name)
+    return import_string(class_string)
 
 
 class HybridStorage(Storage):
